@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppECommerce.Pages.MenuPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Menu"
+    BackgroundColor="{StaticResource MenuColor}"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <StackLayout>
+        <StackLayout.Padding>
+            <OnIdiom x:TypeArguments="Thickness">
+                <OnIdiom.Phone>
+                    <OnPlatform
+                        x:TypeArguments="Thickness"
+                        Android="5,40,5,5"
+                        WinPhone="8,0,0,0"
+                        iOS="10,0,0,0" />
+                </OnIdiom.Phone>
+                <OnIdiom.Tablet>
+                    <OnPlatform
+                        x:TypeArguments="Thickness"
+                        Android="20,0,0,0"
+                        WinPhone="18,0,0,0"
+                        iOS="20,0,0,0" />
+                </OnIdiom.Tablet>
+            </OnIdiom>
+        </StackLayout.Padding>
+
+        <StackLayout Orientation="Horizontal">
+            <Label
+                FontAttributes="Bold"
+                FontSize="24"
+                HorizontalOptions="StartAndExpand"
+                Text="E-Commerce"
+                TextColor="{StaticResource AccentColor}"
+                VerticalOptions="Center" />
+            <Image
+                HeightRequest="80"
+                HorizontalOptions="End"
+                Source="Man.png"
+                VerticalOptions="Center"
+                WidthRequest="80" />
+        </StackLayout>
+        <BoxView HeightRequest="3" Color="{StaticResource AccentColor}" />
+
+        <ListView
+            HasUnevenRows="True"
+            ItemsSource="{Binding Menu}"
+            SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding NavigateCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image
+                                HeightRequest="50"
+                                Source="{Binding Icon}"
+                                WidthRequest="50" />
+                            <Label
+                                Grid.Column="1"
+                                Text="{Binding Title}"
+                                TextColor="{StaticResource MenuFontColor}"
+                                VerticalOptions="Center" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
