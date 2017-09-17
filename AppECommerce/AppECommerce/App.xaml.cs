@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppECommerce.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace AppECommerce
         {
             InitializeComponent();
 
-            MainPage = new AppECommerce.MainPage();
+            MainPage = new LoginPage();
         }
         #endregion
 

@@ -15,6 +15,7 @@
             <Color x:Key="Success">#85DB18</Color>
             <Color x:Key="Info">#4E7AC7</Color>
             <Color x:Key="Danger">#D40D12</Color>
+            <Color x:Key="BackgroundLoginColor">#FFFFF</Color>
 
             <!--  Locator  -->
             <infra:InstanceLocator x:Key="Locator" />

@@ -105,3 +105,9 @@ C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\D
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\GalaSoft.MvvmLight.Extras.dll.mdb
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\GalaSoft.MvvmLight.Platform.dll.mdb
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\Microsoft.Practices.ServiceLocation.dll.mdb
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\bin\Debug\AppECommerce.Android.dll.config
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\bin\Debug\AppECommerce.dll.config
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\bin\Debug\System.Net.Http.Primitives.xml

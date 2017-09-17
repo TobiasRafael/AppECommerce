@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppECommerce.Pages.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ECommerce"
+    BackgroundColor="{StaticResource BackgroundLoginColor}"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <StackLayout
+        Padding="30"
+        BindingContext="{Binding NewLogin}"
+        Spacing="20">
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <Label
+                FontAttributes="Bold"
+                FontSize="24"
+                HorizontalOptions="Center"
+                Text="E-Commerce"
+                TextColor="{StaticResource AccentColor}"
+                VerticalOptions="Center" />
+            <Image
+                HeightRequest="80"
+                HorizontalOptions="Center"
+                Source="ECommerce.png"
+                VerticalOptions="Center"
+                WidthRequest="80" />
+        </StackLayout>
+
+        <BoxView HeightRequest="3" Color="{StaticResource AccentColor}" />
+
+        <Entry
+            Keyboard="Email"
+            Placeholder="User"
+            Text="{Binding User, Mode=TwoWay}"
+            TextColor="{StaticResource FontColor}" />
+        <Entry
+            IsPassword="True"
+            Placeholder="Password"
+            Text="{Binding Password, Mode=TwoWay}"
+            TextColor="{StaticResource FontColor}" />
+        <Button
+            Command="{Binding LoginCommand, Mode=TwoWay}"
+            HorizontalOptions="Center"
+            IsVisible="{Binding IsButtonVisible}"
+            Text="Log in"
+            TextColor="{StaticResource Success}"
+            VerticalOptions="Center" />
+
+        <ActivityIndicator IsRunning="{Binding IsRunning}" />
+
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <Label
+                HorizontalOptions="Center"
+                Text="Remember me"
+                TextColor="{StaticResource FontColor}"
+                VerticalOptions="Center" />
+            <Switch
+                HorizontalOptions="Center"
+                IsToggled="{Binding IsRemembered, Mode=TwoWay}"
+                VerticalOptions="Center" />
+
+        </StackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="Forget your password?"
+            TextColor="{StaticResource Info}"
+            VerticalOptions="Center" />
+    </StackLayout>
+</ContentPage>
