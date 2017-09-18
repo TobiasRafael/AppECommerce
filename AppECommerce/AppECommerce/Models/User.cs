@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +10,11 @@ namespace AppECommerce.Models
 {
     public class User
     {
-        //[PrimaryKey]
+        [PrimaryKey]
         public int UserId { get; set; }
+
+        [ForeignKey(typeof(Company))]
+        public int IdCompany { get; set; }
 
         public string UserName { get; set; }
 
@@ -31,7 +36,7 @@ namespace AppECommerce.Models
 
         public string CityName { get; set; }
 
-        //[ManyToOne]
+        [ManyToOne]
         public Company Company { get; set; }
 
         public bool IsAdmin { get; set; }
@@ -50,10 +55,10 @@ namespace AppECommerce.Models
 
         public string PhotoFullPath { get { return string.Format("http://zulu-software.com/ECommerce{0}", Photo.Substring(1)); } }
 
-        //public override int GetHashCode()
-        //{
-        //    return UserId;
-        //}
+        public override int GetHashCode()
+        {
+            return UserId;
+        }
 
     }
 }

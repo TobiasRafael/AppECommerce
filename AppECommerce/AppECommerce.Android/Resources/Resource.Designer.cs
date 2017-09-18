@@ -26,6 +26,8 @@ namespace AppECommerce.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::AppECommerce.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::AppECommerce.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::AppECommerce.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2219,7 +2221,7 @@ namespace AppECommerce.Droid
 			public const int Orders = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int Product = 2130837670;
+			public const int Products = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
 			public const int Setup = 2130837671;
@@ -2963,6 +2965,12 @@ namespace AppECommerce.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f080027
+			public const int ApplicationName = 2131230759;
+			
+			// aapt resource value: 0x7f080026
+			public const int Hello = 2131230758;
 			
 			// aapt resource value: 0x7f08000f
 			public const int abc_action_bar_home_description = 2131230735;

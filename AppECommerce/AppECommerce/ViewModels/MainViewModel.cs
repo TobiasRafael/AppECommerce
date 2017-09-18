@@ -1,4 +1,5 @@
-﻿using AppECommerce.Services;
+﻿using AppECommerce.Models;
+using AppECommerce.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,6 +11,10 @@ namespace AppECommerce.ViewModels
 {
     public class MainViewModel
     {
+        #region Attributes
+
+        
+        #endregion
 
 
         #region Properties
@@ -18,6 +23,8 @@ namespace AppECommerce.ViewModels
 
         public LoginViewModel NewLogin { get; set; }
 
+        public UserViewModel UserLoged { get; set; }
+
 
         #endregion
 
@@ -25,20 +32,57 @@ namespace AppECommerce.ViewModels
         #region Constructors
         public MainViewModel()
         {
+            // Singleton
+            _instance = this;
+
+            //Observable collections
             Menu = new ObservableCollection<MenuItemViewModel>();
+            // Create Views
             NewLogin = new LoginViewModel();
+            UserLoged = new UserViewModel();
+
+            // Instance services
+         
+            //Load data
             LoadMenu();
+          
         }
 
+
+
+        #endregion
+
+        #region Singleton
+
+        private static MainViewModel _instance;
+
+        public static MainViewModel GetInstace()
+        {
+            if (_instance == null)
+            {
+                _instance = new MainViewModel();
+            }
+            return _instance;
+        }
         #endregion
 
 
         #region Methods
+
+      public void LoadUser(User user)
+        {
+                UserLoged.FullName = user.FullName;
+                UserLoged.Photo = user.PhotoFullPath;
+         
+           
+        }
+
+
         private void LoadMenu()
         {
             Menu.Add(new MenuItemViewModel
             {
-                Icon = "Product.png",
+                Icon = "Products.png",
                 PageName = "ProductsPage",
                 Title = "Products",
             });

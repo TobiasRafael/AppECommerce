@@ -7,7 +7,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <!--  Colors  -->
-            <Color x:Key="BackgroundColor">#F4EFDC</Color>
+            <Color x:Key="BackgroundColor">#FFFFF</Color>
             <Color x:Key="MenuColor">#133463</Color>
             <Color x:Key="MenuFontColor">#F3FFE2</Color>
             <Color x:Key="FontColor">#000000</Color>

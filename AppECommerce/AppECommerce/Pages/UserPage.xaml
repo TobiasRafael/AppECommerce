@@ -3,14 +3,33 @@
     x:Class="AppECommerce.Pages.UserPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     Title="ECommerce App"
     BackgroundColor="{StaticResource BackgroundColor}"
     BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout
+            Padding="8"
+            BindingContext="{Binding UserLoged}"
+            Spacing="10"
+            VerticalOptions="CenterAndExpand">
+            <controls:CircleImage
+                Aspect="AspectFill"
+                HeightRequest="300"
+                Source="{Binding Photo}"
+                WidthRequest="300" />
             <Label
+                FontAttributes="Bold"
+                FontSize="25"
                 HorizontalOptions="Center"
-                Text="User Page"
+                Text="Bienvenid@"
+                TextColor="{StaticResource Success}"
+                VerticalOptions="Center" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="25"
+                HorizontalOptions="Center"
+                Text="{Binding FullName}"
                 TextColor="{StaticResource FontColor}"
                 VerticalOptions="Center" />
         </StackLayout>

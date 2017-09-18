@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +10,7 @@ namespace AppECommerce.Models
 {
     public class Company
     {
-        //[PrimaryKey]
+        [PrimaryKey]
         public int CompanyId { get; set; }
 
         public string Name { get; set; }
@@ -23,19 +25,19 @@ namespace AppECommerce.Models
 
         public int CityId { get; set; }
 
-        //[OneToMany(CascadeOperations = CascadeOperation.All)]
-        //public List<User> Users { get; set; }
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
+        public List<User> Users { get; set; }
 
-        //[OneToMany(CascadeOperations = CascadeOperation.All)]
-        //public List<Product> Products { get; set; }
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
+        public List<Product> Products { get; set; }
 
-        //[OneToMany(CascadeOperations = CascadeOperation.All)]
-        //public List<CompanyCustomer> CompanyCustomers { get; set; }
+       [OneToMany(CascadeOperations = CascadeOperation.All)]
+       public List<CompanyCustomer> CompanyCustomers { get; set; }
 
-        //public override int GetHashCode()
-        //{
-        //    return CompanyId;
-        //}
+       public override int GetHashCode()
+       {
+           return CompanyId;
+       }
 
     }
 }

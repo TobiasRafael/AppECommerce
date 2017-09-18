@@ -2565,7 +2565,7 @@ containing a value of this type.
         public static final int mr_ic_play_light=0x7f0200a4;
         public static final int notification_template_icon_bg=0x7f0200aa;
         public static final int orders=0x7f0200a5;
-        public static final int product=0x7f0200a6;
+        public static final int products=0x7f0200a6;
         public static final int setup=0x7f0200a7;
         public static final int sync=0x7f0200a8;
         public static final int user=0x7f0200a9;
@@ -2802,6 +2802,8 @@ containing a value of this type.
         public static final int toolbar=0x7f030038;
     }
     public static final class string {
+        public static final int ApplicationName=0x7f080027;
+        public static final int Hello=0x7f080026;
         public static final int abc_action_bar_home_description=0x7f08000f;
         public static final int abc_action_bar_home_description_format=0x7f080010;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f080011;

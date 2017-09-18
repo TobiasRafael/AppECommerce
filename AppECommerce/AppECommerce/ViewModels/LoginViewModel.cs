@@ -1,4 +1,5 @@
-﻿using AppECommerce.Services;
+﻿using AppECommerce.Models;
+using AppECommerce.Services;
 using GalaSoft.MvvmLight.Command;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace AppECommerce.ViewModels
         private DialogService _dialogService;
 
         private ApiService _apiService;
+
+        private DataService _dataService;
 
         private bool _isRunning;
 
@@ -77,6 +80,7 @@ namespace AppECommerce.ViewModels
             _navigationService = new NavigationService();
             _dialogService = new DialogService();
             _apiService = new ApiService();
+            _dataService = new DataService();
 
             IsRemembered = true;
             IsButtonVisible = true;
@@ -107,7 +111,12 @@ namespace AppECommerce.ViewModels
                 await _dialogService.ShowMessage("Error", response.Message);
                 return;
             }
-            _navigationService.SetMainPage();
+            var user = (User)response.Result;
+            user.IsRemembered = IsRemembered;
+            user.Password = Password;
+
+            _dataService.InsertUser(user);
+            _navigationService.SetMainPage(user);
         } 
         #endregion
     }
