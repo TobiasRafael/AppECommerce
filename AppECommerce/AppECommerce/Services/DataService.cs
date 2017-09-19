@@ -10,7 +10,7 @@ namespace AppECommerce.Services
 {
     public class DataService
     {
-        
+
         public Response UpdateUser(User user)
         {
             try
@@ -46,6 +46,15 @@ namespace AppECommerce.Services
             }
         }
 
+        public List<Product> GetProducts(string filter)
+        {
+            using (var da = new DataAccess())
+            {
+                return da.GetList<Product>(true).OrderBy(p => p.Description)
+                    .Where(p => p.Description.ToUpper().Contains(filter.ToUpper()))
+                    .ToList();
+            }
+        }
 
         public Response InsertUser(User user)
         {
@@ -79,5 +88,93 @@ namespace AppECommerce.Services
             }
         }
 
+       
+
+       public List<Customer> GetCustomers(string customersFilter)
+        {
+            using (var da = new DataAccess())
+            {
+                return da.GetList<Customer>(true).OrderBy(c => c.FirstName)
+                    .ThenBy(c => c.LastName)
+                    .Where(c => c.FirstName.ToUpper().Contains(customersFilter.ToUpper()) ||
+                                c.LastName.ToUpper().Contains(customersFilter.ToUpper()))
+                    .ToList();
+            }
+        }
+
+        public List<Product> GetProducts()
+        {
+            using (var da = new DataAccess())
+            {
+                return da.GetList<Product>(true).OrderBy(p => p.Description).ToList();
+            }
+        }
+
+        public Response Login(string email, string password)
+        {
+            try
+            {
+                using (var da = new DataAccess())
+                {
+                    var user = da.First<User>(true);
+                    if (user == null)
+                    {
+                        return new Response
+                        {
+                            IsSuccess = false,
+                            Message = "No internet connection",
+                        };
+                    }
+                    if (user.UserName.ToUpper() == email.ToUpper() && user.Password == password)
+                    {
+                        return new Response
+                        {
+                            IsSuccess = true,
+                            Message = "Login Ok",
+                            Result = user,
+                        };
+                    }
+                    return new Response
+                    {
+                        IsSuccess = false,
+                        Message = "User and password incorrect",
+
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return new Response
+                {
+                    IsSuccess = false,
+                    Message = ex.Message,
+                };
+            }
+        }
+
+        public void Save<T>(List<T> list)  where T : class
+        {
+            using (var da = new DataAccess())
+            {
+                var oldRecords = da.GetList<T>(false);
+                foreach (var record in oldRecords)
+                {
+                    da.Delete(record);
+                }
+                foreach (var record in list)
+                {
+                    da.Insert(record);
+                }
+            }
+        }
+
+        public List<T> Get<T>(bool withChildren) where T : class
+        {
+            using (var da = new DataAccess())
+            {
+                return da.GetList<T>(withChildren).ToList();
+            }
+        }
     }
 }

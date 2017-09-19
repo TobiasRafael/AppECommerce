@@ -8,7 +8,14 @@
     BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Customer Page" />
+            <SearchBar
+                Placeholder="Search.."
+                SearchCommand="{Binding SearchCustomerCommand}"
+                Text="{Binding CustomersFilter, Mode=TwoWay}" />
+            <ListView
+                HasUnevenRows="True"
+                ItemTemplate="{StaticResource CustomerItemTemplate}"
+                ItemsSource="{Binding Customers}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

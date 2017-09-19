@@ -42,9 +42,9 @@ C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\D
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Collections.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Threading.dll
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Linq.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
-C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Linq.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Text.Encoding.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll

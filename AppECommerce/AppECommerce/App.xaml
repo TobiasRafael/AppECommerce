@@ -3,6 +3,7 @@
     x:Class="AppECommerce.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     xmlns:infra="clr-namespace:AppECommerce.Infraestructure;assembly=AppECommerce">
     <Application.Resources>
         <ResourceDictionary>
@@ -19,6 +20,73 @@
 
             <!--  Locator  -->
             <infra:InstanceLocator x:Key="Locator" />
+
+            <!--  Data templates  -->
+            <DataTemplate x:Key="ProductItemTemplate">
+                <ViewCell>
+                    <Grid Padding="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            HeightRequest="100"
+                            Source="{Binding ImageFullPath}"
+                            VerticalOptions="Start"
+                            WidthRequest="100" />
+                        <StackLayout Grid.Column="1">
+                            <Label
+                                FontAttributes="Bold"
+                                Text="{Binding Description}"
+                                TextColor="{StaticResource FontColor}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Text="{Binding Price, StringFormat='Price: {0:2}'}"
+                                TextColor="{StaticResource FontColor}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Text="{Binding Stock, StringFormat='Stock: {0:2}'}"
+                                TextColor="{StaticResource FontColor}"
+                                VerticalOptions="Center" />
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+
+            <DataTemplate x:Key="CustomerItemTemplate">
+                <ViewCell>
+                    <Grid Padding="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <controls:CircleImage
+                            Aspect="AspectFill"
+                            HeightRequest="100"
+                            Source="{Binding PhotoFullPath}"
+                            WidthRequest="100" />
+                        <StackLayout Grid.Column="1">
+                            <Label
+                                FontAttributes="Bold"
+                                Text="{Binding FullName}"
+                                TextColor="{StaticResource FontColor}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Text="{Binding UserName, StringFormat='Mail: {0}'}"
+                                TextColor="{StaticResource FontColor}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Text="{Binding Address, StringFormat='Address: {0}'}"
+                                TextColor="{StaticResource FontColor}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Text="{Binding Phone, StringFormat='Phone: {0}'}"
+                                TextColor="{StaticResource FontColor}"
+                                VerticalOptions="Center" />
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
 
         </ResourceDictionary>
     </Application.Resources>

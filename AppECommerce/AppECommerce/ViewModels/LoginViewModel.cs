@@ -22,6 +22,8 @@ namespace AppECommerce.ViewModels
 
         private DataService _dataService;
 
+        private NetService _netService;
+
         private bool _isRunning;
 
         private bool _isButtonVisible;
@@ -81,6 +83,7 @@ namespace AppECommerce.ViewModels
             _dialogService = new DialogService();
             _apiService = new ApiService();
             _dataService = new DataService();
+            _netService = new NetService();
 
             IsRemembered = true;
             IsButtonVisible = true;
@@ -100,8 +103,15 @@ namespace AppECommerce.ViewModels
             }
             IsButtonVisible = false;
             IsRunning = true;
-            
-            var response = await _apiService.Login(User, Password);
+            var response = new Response();
+            if (_netService.IsConnected())
+            {
+                response = await _apiService.Login(User, Password);
+            }
+            else
+            {
+                response =  _dataService.Login(User, Password);
+            }
 
             IsRunning = false;
             IsButtonVisible = true;
