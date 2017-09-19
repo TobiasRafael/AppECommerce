@@ -44,6 +44,6 @@ C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\App
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\AppECommerce.Pages.SetupPage.xaml.g.cs
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\AppECommerce.Pages.SyncPage.xaml.g.cs
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\AppECommerce.Pages.LoginPage.xaml.g.cs
+C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\AppECommerce.Pages.CustomerDetailPage.xaml.g.cs
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\AppECommerce.dll
 C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\AppECommerce.pdb
-C:\Users\tobia\Source\Repos\AppECommerce\AppECommerce\AppECommerce\obj\Debug\AppECommerce.csprojResolveAssemblyReference.cache

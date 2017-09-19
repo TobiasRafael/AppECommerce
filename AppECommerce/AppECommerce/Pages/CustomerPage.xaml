@@ -7,7 +7,7 @@
     BackgroundColor="{StaticResource BackgroundColor}"
     BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="8">
             <SearchBar
                 Placeholder="Search.."
                 SearchCommand="{Binding SearchCustomerCommand}"

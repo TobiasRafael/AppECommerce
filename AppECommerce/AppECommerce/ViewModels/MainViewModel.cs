@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using System.Linq;
 using System.ComponentModel;
+using System;
 
 namespace AppECommerce.ViewModels
 {
@@ -41,6 +42,8 @@ namespace AppECommerce.ViewModels
 
         public UserViewModel UserLoged { get; set; }
 
+        public CustomerItemViewModel CurrentCustomer { get; set; }
+
         public string ProductsFilter
         {
             set
@@ -60,7 +63,7 @@ namespace AppECommerce.ViewModels
                 return _productsFilter;
             }
         }
-
+   
         public string CustomersFilter
         {
             set
@@ -81,10 +84,6 @@ namespace AppECommerce.ViewModels
             }
         }
 
-
-
-
-
         #endregion
 
         #region Commands
@@ -102,8 +101,6 @@ namespace AppECommerce.ViewModels
         {
 
             var products = _dataService.GetProducts(ProductsFilter);
-
-
 
             ReloadProducts(products);
 
@@ -125,6 +122,7 @@ namespace AppECommerce.ViewModels
             // Create Views
             NewLogin = new LoginViewModel();
             UserLoged = new UserViewModel();
+            CurrentCustomer = new CustomerItemViewModel();
 
             // Instance services
             _apiService = new ApiService();
@@ -158,6 +156,11 @@ namespace AppECommerce.ViewModels
 
 
         #region Methods
+
+        public void SetCurrentCustomer(CustomerItemViewModel customerItemViewModel)
+        {
+            CurrentCustomer = customerItemViewModel;
+        }
         private void LoadLocalCustomers()
         {
             var customers = _dataService.Get<Customer>(true);

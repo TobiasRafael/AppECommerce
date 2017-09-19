@@ -16,7 +16,8 @@
             <Color x:Key="Success">#85DB18</Color>
             <Color x:Key="Info">#4E7AC7</Color>
             <Color x:Key="Danger">#D40D12</Color>
-            <Color x:Key="BackgroundLoginColor">#FFFFF</Color>
+
+
 
             <!--  Locator  -->
             <infra:InstanceLocator x:Key="Locator" />
@@ -24,7 +25,7 @@
             <!--  Data templates  -->
             <DataTemplate x:Key="ProductItemTemplate">
                 <ViewCell>
-                    <Grid Padding="8">
+                    <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
@@ -55,7 +56,10 @@
 
             <DataTemplate x:Key="CustomerItemTemplate">
                 <ViewCell>
-                    <Grid Padding="8">
+                    <Grid>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding CustomerDetailCommand}" />
+                        </Grid.GestureRecognizers>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
