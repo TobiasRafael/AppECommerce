@@ -9,19 +9,20 @@
 //------------------------------------------------------------------------------
 
 namespace AppECommerce {
+    using System;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\tobia\\Source\\Repos\\AppECommerce\\AppECommerce\\AppECommerce\\Pages\\MainPage" +
-        ".xaml")]
     public partial class MainPage : global::Xamarin.Forms.MasterDetailPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.NavigationPage Navigator;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            Navigator = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.NavigationPage>(this, "Navigator");
+            this.LoadFromXaml(typeof(MainPage));
+            Navigator = this.FindByName<global::Xamarin.Forms.NavigationPage>("Navigator");
         }
     }
 }

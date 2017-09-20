@@ -2289,6 +2289,17 @@
           }
         }
       },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "type": "package",
         "dependencies": {
@@ -2303,7 +2314,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.2.127": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -2318,7 +2329,25 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.3.2.127": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "AppECommerce/1.0.0": {
@@ -4696,6 +4725,17 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "type": "package",
         "dependencies": {
@@ -4710,7 +4750,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.2.127": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4725,7 +4765,25 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.3.2.127": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "AppECommerce/1.0.0": {
@@ -7139,6 +7197,17 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "type": "package",
         "dependencies": {
@@ -7153,7 +7222,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.2.127": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -7168,7 +7237,25 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.3.2.127": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "AppECommerce/1.0.0": {
@@ -9555,6 +9642,17 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "type": "package",
         "dependencies": {
@@ -9569,7 +9667,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.2.127": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -9584,7 +9682,25 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.3.2.127": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "AppECommerce/1.0.0": {
@@ -12007,6 +12123,17 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "type": "package",
         "dependencies": {
@@ -12021,7 +12148,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.2.127": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12036,7 +12163,25 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.3.2.127": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "AppECommerce/1.0.0": {
@@ -14423,6 +14568,17 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "type": "package",
         "dependencies": {
@@ -14437,7 +14593,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.2.127": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -14452,7 +14608,25 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.3.2.127": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "AppECommerce/1.0.0": {
@@ -16875,6 +17049,17 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "type": "package",
         "dependencies": {
@@ -16889,7 +17074,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.270": {
+      "Xamarin.Forms/2.3.2.127": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -16904,7 +17089,25 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.3.2.127": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "AppECommerce/1.0.0": {
@@ -25473,6 +25676,66 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Xam.Plugin.Geolocator/3.0.4": {
+      "sha512": "5UMAwRk+dk+Ar0Ei+Jd0H8G0a0tHsm9gJouCXMuGnvEFU2CzOJJKrNfH2QGi7eVfsd5/XHoJhhk6J0Pi38olXA==",
+      "type": "package",
+      "path": "xam.plugin.geolocator/3.0.4",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Geolocator.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.xml",
+        "lib/MonoTouch10/Plugin.Geolocator.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Geolocator.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Geolocator.dll",
+        "lib/MonoTouch10/Plugin.Geolocator.xml",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.dll",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.xml",
+        "lib/UAP10/Plugin.Geolocator.dll",
+        "lib/UAP10/Plugin.Geolocator.pdb",
+        "lib/UAP10/Plugin.Geolocator.xml",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.xml",
+        "lib/net45/Plugin.Geolocator.Abstractions.dll",
+        "lib/net45/Plugin.Geolocator.Abstractions.pdb",
+        "lib/net45/Plugin.Geolocator.Abstractions.xml",
+        "lib/net45/Plugin.Geolocator.dll",
+        "lib/net45/Plugin.Geolocator.pdb",
+        "lib/net45/Plugin.Geolocator.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.xml",
+        "lib/win8/Plugin.Geolocator.Abstractions.dll",
+        "lib/win8/Plugin.Geolocator.Abstractions.pdb",
+        "lib/win8/Plugin.Geolocator.Abstractions.xml",
+        "lib/win8/Plugin.Geolocator.dll",
+        "lib/win8/Plugin.Geolocator.pdb",
+        "lib/win8/Plugin.Geolocator.xml",
+        "lib/wp8/Plugin.Geolocator.Abstractions.dll",
+        "lib/wp8/Plugin.Geolocator.Abstractions.pdb",
+        "lib/wp8/Plugin.Geolocator.Abstractions.xml",
+        "lib/wp8/Plugin.Geolocator.dll",
+        "lib/wp8/Plugin.Geolocator.pdb",
+        "lib/wp8/Plugin.Geolocator.xml",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.dll",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.pdb",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.xml",
+        "lib/wpa81/Plugin.Geolocator.dll",
+        "lib/wpa81/Plugin.Geolocator.pdb",
+        "lib/wpa81/Plugin.Geolocator.xml",
+        "readme.txt",
+        "xam.plugin.geolocator.3.0.4.nupkg.sha512",
+        "xam.plugin.geolocator.nuspec"
+      ]
+    },
     "Xam.Plugins.Forms.ImageCircle/1.8.1": {
       "sha512": "gU4mTnwB3TCBw3eLP0MNpLUKNsWxYJe28NbpU/CY6YQaGtrIOZ5XRrvjz30w6AKhXeIA+DC6klUY1YqfCNWgPg==",
       "type": "package",
@@ -25519,19 +25782,24 @@
         "xam.plugins.forms.imagecircle.nuspec"
       ]
     },
-    "Xamarin.Forms/2.3.4.270": {
-      "sha512": "D4QNulRsghAnjGefCuxvHaH9xLdk9gmSrqSoyIH9YqRa/+HNil7nLCt3Dwb7np1eNlKD6AoW+Kgv9Umur/yoUQ==",
+    "Xamarin.Forms/2.3.2.127": {
+      "sha512": "5f//6Ot/zh9Rg9QksTKTA8iH5h+9GMLfA0M6aS9dVRq26ChIwmZlBCk6EETGQVSDx+yHZ5h/WHYfnwU08IriMg==",
       "type": "package",
-      "path": "xamarin.forms/2.3.4.270",
+      "path": "xamarin.forms/2.3.2.127",
       "files": [
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Mdb.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Pdb.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Rocks.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Build.Tasks.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.Decompiler.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.CSharp.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.Cecil.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.Xml.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Mono.Cecil.Mdb.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Mono.Cecil.Pdb.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Mono.Cecil.Rocks.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Mono.Cecil.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Build.Tasks.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
@@ -25545,6 +25813,52 @@
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.xml",
+        "lib/MonoTouch10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoTouch10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Core.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Core.dll.mdb",
+        "lib/MonoTouch10/Xamarin.Forms.Core.pdb",
+        "lib/MonoTouch10/Xamarin.Forms.Core.xml",
+        "lib/MonoTouch10/Xamarin.Forms.Platform.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Platform.iOS.Classic.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Xaml.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Xaml.dll.mdb",
+        "lib/MonoTouch10/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoTouch10/Xamarin.Forms.Xaml.xml",
+        "lib/MonoTouch10/ar/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/ca/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/cs/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/da/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/de/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/el/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/es/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/fi/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/fr/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/he/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/hi/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/hr/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/hu/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/id/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/it/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/ja/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/ko/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/ms/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/nb/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/nl/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/pl/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/pt-BR/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/pt/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/ro/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/ru/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/sk/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/sv/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/th/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/tr/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/uk/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/vi/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/zh-HK/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/zh-Hans/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
+        "lib/MonoTouch10/zh-Hant/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
         "lib/WP80/Design/Xamarin.Forms.Core.Design.dll",
         "lib/WP80/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/WP80/Xamarin.Forms.Core.dll",
@@ -25604,19 +25918,19 @@
         "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll.mdb",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.pdb",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.xml",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll.mdb",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.pdb",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll.mdb",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.pdb",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.dll.mdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Platform.dll.mdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Platform.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.dll.mdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
         "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
         "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/uap10.0/Xamarin.Forms.Core.dll",
@@ -25624,14 +25938,10 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControl.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
@@ -25673,8 +25983,73 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.3.4.270.nupkg.sha512",
+        "xamarin.forms.2.3.2.127.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Maps/2.3.2.127": {
+      "sha512": "0dSV+ZCCdEinSw0V76AapyfU9Hd4rn8vLZpFIFraCrd1935O1UhsbeBG8dcnIFzzSxGB+KcgvAO81uUePahB6w==",
+      "type": "package",
+      "path": "xamarin.forms.maps/2.3.2.127",
+      "files": [
+        "build/win81/ARM/Xamarin.Forms.Maps.WinRT.Tablet.dll",
+        "build/win81/ARM/Xamarin.Forms.Maps.WinRT.Tablet.pri",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet.dll",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
+        "build/win81/Xamarin.Forms.Maps.props",
+        "build/win81/Xamarin.Forms.Maps.targets",
+        "build/win81/x64/Xamarin.Forms.Maps.WinRT.Tablet.dll",
+        "build/win81/x64/Xamarin.Forms.Maps.WinRT.Tablet.pri",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet.dll",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
+        "build/win81/x86/Xamarin.Forms.Maps.WinRT.Tablet.dll",
+        "build/win81/x86/Xamarin.Forms.Maps.WinRT.Tablet.pri",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet.dll",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.xml",
+        "lib/MonoTouch10/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Maps.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Maps.iOS.Classic.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Maps.xml",
+        "lib/WP80/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/WP80/Xamarin.Forms.Maps.WP8.dll",
+        "lib/WP80/Xamarin.Forms.Maps.dll",
+        "lib/WP80/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.Maps.dll",
+        "lib/win81/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/win81/Xamarin.Forms.Maps.dll",
+        "lib/win81/Xamarin.Forms.Maps.xml",
+        "lib/wpa81/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/wpa81/Xamarin.Forms.Maps.WinRT.Phone.dll",
+        "lib/wpa81/Xamarin.Forms.Maps.WinRT.Phone.pri",
+        "lib/wpa81/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.2.3.2.127.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
       ]
     },
     "AppECommerce/1.0.0": {
@@ -25691,8 +26066,9 @@
       "MvvmLightLibs >= 5.3.0",
       "SQLite.Net-PCL >= 3.1.1",
       "SQLiteNetExtensions >= 1.3.0",
+      "Xam.Plugin.Geolocator >= 3.0.4",
       "Xam.Plugins.Forms.ImageCircle >= 1.8.1",
-      "Xamarin.Forms >= 2.3.4.270"
+      "Xamarin.Forms.Maps >= 2.3.2.127"
     ],
     "UAP,Version=v10.0.10586": []
   },
@@ -25701,12 +26077,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce\\AppECommerce\\AppECommerce.UWP\\AppECommerce.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce3\\AppECommerce\\AppECommerce.UWP\\AppECommerce.UWP.csproj",
       "projectName": "AppECommerce.UWP",
-      "projectPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce\\AppECommerce\\AppECommerce.UWP\\AppECommerce.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce\\AppECommerce\\AppECommerce.UWP\\project.json",
+      "projectPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce3\\AppECommerce\\AppECommerce.UWP\\AppECommerce.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce3\\AppECommerce\\AppECommerce.UWP\\project.json",
       "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce\\AppECommerce\\AppECommerce.UWP\\obj\\",
+      "outputPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce3\\AppECommerce\\AppECommerce.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -25719,8 +26095,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\tobia\\Source\\Repos\\AppECommerce\\AppECommerce\\AppECommerce\\AppECommerce.csproj": {
-              "projectPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce\\AppECommerce\\AppECommerce\\AppECommerce.csproj"
+            "C:\\Users\\tobia\\Source\\Repos\\AppECommerce3\\AppECommerce\\AppECommerce\\AppECommerce.csproj": {
+              "projectPath": "C:\\Users\\tobia\\Source\\Repos\\AppECommerce3\\AppECommerce\\AppECommerce\\AppECommerce.csproj"
             }
           }
         }
@@ -25733,8 +26109,9 @@
       "MvvmLightLibs": "5.3.0",
       "SQLite.Net-PCL": "3.1.1",
       "SQLiteNetExtensions": "1.3.0",
+      "Xam.Plugin.Geolocator": "3.0.4",
       "Xam.Plugins.Forms.ImageCircle": "1.8.1",
-      "Xamarin.Forms": "2.3.4.270"
+      "Xamarin.Forms.Maps": "2.3.2.127"
     },
     "frameworks": {
       "uap10.0.10586": {}
