@@ -7,6 +7,7 @@ using System.Windows.Input;
 using System.Linq;
 using System.ComponentModel;
 using System;
+using Xamarin.Forms.Maps;
 
 namespace AppECommerce.ViewModels
 {
@@ -37,6 +38,8 @@ namespace AppECommerce.ViewModels
         public ObservableCollection<ProductItemViewModel> Products { get; set; }
 
         public ObservableCollection<CustomerItemViewModel> Customers { get; set; }
+
+        public ObservableCollection<Pin> Pins { get; set; }
 
         public LoginViewModel NewLogin { get; set; }
 
@@ -118,7 +121,8 @@ namespace AppECommerce.ViewModels
             Menu = new ObservableCollection<MenuItemViewModel>();
             Products = new ObservableCollection<ProductItemViewModel>();
             Customers = new ObservableCollection<CustomerItemViewModel>();
-
+            Pins = new ObservableCollection<Pin>();
+            
             // Create Views
             NewLogin = new LoginViewModel();
             UserLoged = new UserViewModel();
@@ -156,6 +160,20 @@ namespace AppECommerce.ViewModels
 
 
         #region Methods
+
+        public void SetGeolotation(string name, string address, double latitude, double longitude)
+        {
+            var position = new Position(latitude, longitude);
+            var pin = new Pin
+            {
+                Type = PinType.Place,
+                Position = position,
+                Label = name,
+                Address = address
+            };
+            Pins.Add(pin);
+
+        }
 
         public void SetCurrentCustomer(CustomerItemViewModel customerItemViewModel)
         {
